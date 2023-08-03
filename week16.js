@@ -496,7 +496,7 @@ document.querySelector('.b-26').onclick = function (event) {
 	const formThird26 = document.forms.formThree;
 	const elementName26 = formThird26.elements.thirdName;
 	const result26 = document.getElementById('result26');
-	result26.textContent = elementName26.value;
+	result26.textContent = elementName26.placeholder;
 };
 
 //Задание 27
