@@ -234,6 +234,25 @@ document.querySelector('.b-12').onclick = makeTwelve;
 //- Используйте условный оператор (if) для проверки выбранности кнопки
 //- Если кнопка выбрана, выведите сообщение "Кнопка выбрана" на страницу
 //- Если кнопка не выбрана, выведите сообщение "Кнопка не выбрана" на страницу
+/*
+const paragraphThirteen = document.getElementById('practicum13');
+const form13 = document.forms[3];
+const radio = form13.elements.fourthName;
+//const radio = document.querySelector('.radio')
+
+function checkButton(e) {
+  e.preventDefault();
+  if (radio.checked) {
+    paragraphThirteen.textContent = 'Кнопка выбрана на страницу';
+    console.log('Кнопка выбрана на страницу');
+  } else {
+    paragraphThirteen.textContent = 'Кнопка не выбрана на страницу';
+    console.log('Кнопка выбрана на страницу');
+  }
+};
+
+document.querySelector('.b-13').addEventListener('click', checkButton);
+
 
 const paragraphThirteen = document.getElementById('practicum13');
 
@@ -250,6 +269,7 @@ function checkButton(e) {
 }
 
 document.querySelector('.b-13').addEventListener('click', checkButton);
+*/
 
 //Задание 14
 //Проверьте какой вариант выбран в первой форме
@@ -451,13 +471,14 @@ const formFourth = document.forms.lastForm;
 const registerOption = formFourth.elements.fourthName;
 const submitButton = document.querySelector('.b-13');
 
-registerOption.addEventListener('change', function () {
-	if (registerOption.checked) {
-		submitButton.disabled = false;
-	} else {
-		submitButton.disabled = true;
-	}
-})
+function checkOption() {
+    if (registerOption.checked) {
+      submitButton.removeAttribute('disabled');
+    } else {
+      submitButton.setAttribute('disabled', 'disabled');
+    }
+  }
+
 
 //Задание 24
 //Найдите все поля ввода на странице и установите им атрибут "placeholder" со значением "Введите данные"

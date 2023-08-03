@@ -92,11 +92,10 @@
 				<h2>Форма 4</h2>
 				<form name="lastForm" class="fourthForm">
 					<label class="form__label">Зарегистрируемся?</label>
-					<input type="radio" name="fourthName" value="Я хочу зарегистрироваться" class="form__input" />
+					<input type="radio" name="fourthName" value="Я хочу зарегистрироваться" class="form__input" onchange="checkOption()"  />
 					<span>Я хочу зарегистрироваться</span>
 					<br />
-
-					<input type="submit" name="fourthButton" value="Отправить" class="form__submit b-13" />
+					<input type="submit" name="fourthButton" value="Отправить" class="form__submit b-13" disabled />
 					<p id="practicum13"></p>
 				</form>
 			</div>
