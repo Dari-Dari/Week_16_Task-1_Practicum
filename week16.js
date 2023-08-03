@@ -393,7 +393,7 @@ selectElement.onchange = function () {
 //- В обработчике события, используя регулярное выражение (RegExp), проверьте введенное значение поля Email
 //- В зависимости от результата проверки, измените стиль поля Email (например, установите класс с ошибкой) и отобразите сообщение об ошибке в элементе <p> (добавьте элемент самостоятельно) с помощью свойства textContent.
 
-const formOne = document.forms.formOne;
+//const formOne = document.forms.formOne;
 const emailInput = formOne.elements.firstEmail;
 const errorMessage = document.getElementById('errorMessage');
 
